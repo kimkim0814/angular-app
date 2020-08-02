@@ -10,7 +10,8 @@ import { HeroesComponent }      from './heroes/heroes.component';
 import { MessagesComponent }    from './messages/messages.component';
 
 import { AppRoutingModule }     from './app-routing.module';
-
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService }  from './in-memory-data.service';
 
 
 @NgModule({
@@ -28,5 +29,6 @@ import { AppRoutingModule }     from './app-routing.module';
     MessagesComponent
   ],
   bootstrap: [ AppComponent ]
+  
 })
 export class AppModule { }
